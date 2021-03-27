@@ -23,8 +23,8 @@ float potencia(float num,int exp);
 int _tmain(int argc, _TCHAR* argv[])
 {   //POLINOMIO LISTA PUNTERO
 	PolinomioLP* pol = new PolinomioLP();
-	pol->ponertermino(2,0);
-	cout<<"ss: "<<Area(pol,-2,2);
+   ////	pol->ponertermino(2,1);
+   ////	cout<<"ss: "<<Area(pol,-2,2);
 	//ListaP* l=new ListaP();
 	 /*
 	PolinomioLP* P1 = new PolinomioLP();
@@ -57,7 +57,7 @@ float Area(PolinomioLP* pol,float a, float b){
  for (int i = 1; i <= pol->numeroterminos() ; i++) {
    exp = pol->exponente(i)+1;
    operA= operA + potencia(a,exp) * (pol->coeficiente(pol->exponente(i))/exp);
- }                  //2
+ }
 
   for (int i = 1; i <= pol->numeroterminos() ; i++) {
    exp = pol->exponente(i)+1;
